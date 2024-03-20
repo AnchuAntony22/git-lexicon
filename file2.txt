@@ -1,2 +1,4 @@
-"update for file2" 
+update for file2
 update again 
+Updated content for file2
+
