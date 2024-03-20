@@ -1,1 +1,1 @@
-"updated file2"
+"Content for file2" 
