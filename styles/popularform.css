@@ -1,4 +1,30 @@
-p{
-    font-size: 30px;
-    color: red;
+.part {
+    counter-reset: part section; 
+}
+
+.part::before {
+    counter-increment: part;
+    content: "Part " counter(part, upper-roman) " ";
+}
+
+.chapter {
+    counter-increment: section; 
+}
+
+.chapter::before {
+    content: "Chapter " counter(section) " ";
+}
+
+.subchild {
+    counter-reset: subsubsection; 
+}
+
+.subchild::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+
+.subsubchild::before {
+    counter-increment: subsubsection;
+    content: counter(section) "." counter(subsection) ". " counter(subsubsection) " ";
 }
