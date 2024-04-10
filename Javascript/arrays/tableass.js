@@ -28,11 +28,15 @@ const getTable = (companyList) => {
 
 const getRow = (rowData) => {
     const rowToAdd = document.createElement("tr");
+    
+    rowData.map(data => {
+        const tableData = document.createElement("td");
+        tableData.innerText = data;
+        rowToAdd.appendChild(tableData); 
+    });
 
-    const tableData = document.createElement("td");
-    tableData.innerText = rowData;
-    rowToAdd.appendChild(tableData);
     return rowToAdd;
-}    
+}
+  
 const target = document.getElementById("btn");
 target.addEventListener("click",getCompany);
