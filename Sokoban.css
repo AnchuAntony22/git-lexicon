@@ -1,0 +1,50 @@
+body{
+    background-image: url(i7.gif);
+}
+#map-container {
+    display: grid;
+    grid-template-columns: repeat(19, 30px); 
+    gap: 0px; 
+
+}
+
+
+.row {
+    display: contents; 
+}
+
+.row > div {
+    width: 30px; 
+    height: 30px; 
+    border: 1px solid #45434370; 
+    
+    
+}
+
+
+.tile-wall {
+    
+    background-image: url(i2.gif);
+}
+
+.tile-space {
+    
+    background-image: url(i0.gif);
+}
+
+.tile-goal {
+    
+    background-image: url(i1.gif);
+}
+
+.entity-player {
+     
+    background-image: url(i5.gif);
+}
+
+.entity-block {
+    
+    background-image: url(i3.gif);
+}
+
+
